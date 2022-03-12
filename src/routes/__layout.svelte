@@ -3,5 +3,4 @@
 </script>
 
 <Nav />
-<!-- what the fuck is slot tag -->
 <slot />
