@@ -2,7 +2,7 @@ import { writable } from 'svelte/store';
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 
-export let pokemon = writable([]);
+export const pokemonObjList = writable([]);
 
 const fetchPokemons = async () => {
 	const pokemonsUrl = 'https://pokeapi.co/api/v2/pokemon?limit=5';
@@ -18,10 +18,11 @@ const fetchPokemons = async () => {
 				}.png`
 			};
 		});
-		console.log(processedPokeObjsList);
+		pokemonObjList.set(processedPokeObjsList);
 	} catch (err) {
 		console.error(err);
 	}
+	console.log(pokemonObjList);
 };
 
 fetchPokemons();
