@@ -11,3 +11,11 @@
 `__layout.svelte` will add whatever you put on it to every page
 
 the layout need to desplay the childerns, which are page components
+
+### Implement the search pokemon feature
+
+create a search bar component that has an input element for user to type in the name of pokemon
+the input string will be search in the pokemart store to find the matching name
+
+something to do with reactivity
+use this feature to tract the input from the search bar
