@@ -19,3 +19,4 @@ the input string will be search in the pokemart store to find the matching name
 
 something to do with reactivity
 use this feature to tract the input from the search bar
+then
